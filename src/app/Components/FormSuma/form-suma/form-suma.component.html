@@ -1,0 +1,9 @@
+<form (ngSubmit)="total = sum(num1, num2)">
+  <input name="num1" [(ngModel)]="num1" type="text" appColorInput>
+  <input name="num2" [(ngModel)]="num2" type="text">
+  <button type="submit">Sumar</button>
+</form>
+
+<h1>{{total}}</h1>
+
+<h3 *ngFor="let user of users">{{ user.name }}</h3>
